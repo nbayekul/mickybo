@@ -1,3 +1,5 @@
+# Function to calculate Euclidean distance
+
 euclidean_distance <- function(vec1,vec2){
   sum <- 0
   for (i in 1:length(vec1)){
@@ -7,11 +9,11 @@ euclidean_distance <- function(vec1,vec2){
   return(result)
 }
 
-##### Suppose we have a game that is modelled by a Markov decision process with 20 states.
-##### The state 20 is the one absorbing state.
+##### Suppose we have a game that is modelled by a Markov decision process with nb_states states.
+##### The last state is the one absorbing state.
 ##### An action is the choice of one die one wants to roll among a collection of five dice 
 ##### that induce various transition one-step transition probabilities between the states.
-##### The goal of the game is to reach the absorbing state (20) in as few moves as possible.
+##### The goal of the game is to reach the destination state in as few moves as possible.
 ##### We use value iteration to determine the optimal policy of the game, i.e.
 ##### the mapping of every state to an action (the choice of a die) that minimises the expected 
 ##### number of steps to complete the game
