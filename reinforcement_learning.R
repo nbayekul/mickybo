@@ -1,5 +1,3 @@
-rm(list = ls())
-
 ###### Generate transition matrices ##############
 
 generate_transition_matrix <- function(nb_states, seed){
